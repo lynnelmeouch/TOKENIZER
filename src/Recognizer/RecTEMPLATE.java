@@ -1,4 +1,4 @@
-/* Author: Prenom NOM, Polytech Grenoble
+/* Author: Lynn EL MEOUCH, Polytech Grenoble
  *  
  * LICENCE GPL
  * 

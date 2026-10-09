@@ -35,6 +35,17 @@ Un automate supplémentaire, `_aba.dot`, décrit le langage `(a|b)*.aba`.
 - **Chaînes** : gère les séquences d'échappement et signale une erreur si la chaîne contient un saut de ligne.
 - **Commentaires** : gère les commentaires sur une ou plusieurs lignes, y compris les cas piégeux comme `/* ... "*/" ... */`.
 
+## Ma contribution
+
+Le squelette du projet (le `Tokenizer`, le `Listener`, le `PrettyPrinter` et les reconnaisseurs d'exemple `RecAny`, `RecABC` et `RecCommand`) était fourni. J'ai réalisé les exercices demandés dans le TP :
+
+1. **Automate `(a|b)*.aba`** : conception de l'AEF dans `_aba.dot`.
+2. **Identificateurs** : conception de l'automate `Ident.dot` et implémentation de `RecIdent.java`, avec la distinction entre identificateurs, **mots-clés** et **types**.
+3. **Chaînes de caractères** : conception de l'automate `String.dot` et implémentation de `RecString.java`, avec gestion des caractères échappés et détection des chaînes contenant un saut de ligne.
+4. **Commentaires** : conception de l'automate `Comment.dot` et implémentation de `RecComment.java`, pour les commentaires `//` et `/* ... */` sur plusieurs lignes.
+
+Pour chacun, j'ai intégré le nouveau reconnaisseur dans `Tokenizer.java` et vérifié son fonctionnement avec `make test` (cas valides) et `make error` (cas d'erreur).
+
 ## Utilisation
 
 Prérequis : Java, `make`, et les outils `dot` (Graphviz), `sed` et `tar`.
